@@ -8,7 +8,10 @@ import {
   StatusBar,
   TouchableOpacity,
 } from 'react-native';
+import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
+import Feather from 'react-native-vector-icons/Feather';
 import Ionicons from 'react-native-vector-icons/Ionicons';
+import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 
 const Home = () => {
   return (
@@ -40,12 +43,21 @@ const Home = () => {
                   2
                 </Text>
               </View>
-              <View>
-                <Ionicons
-                  style={{margin: 10, alignSelf: 'center'}}
-                  name="md-person-sharp"
-                  color="#FF9800"
-                  size={30}
+              <View style={styles.iconView}>
+                <MaterialIcons
+                  name="assignment-return"
+                  size={40}
+                  color="#fff"
+                  style={styles.icon}
+                  style={{
+                    backgroundColor: '#0dcaf0',
+                    alignSelf: 'center',
+                    borderColor: '#fff',
+                    borderWidth: 1,
+                    borderRadius: 50,
+                    marginTop: 30,
+                    marginLeft: 15,
+                  }}
                 />
               </View>
             </View>
@@ -53,7 +65,7 @@ const Home = () => {
         </View>
 
         <View style={styles.rightbox}>
-        <TouchableOpacity>
+          <TouchableOpacity>
             <View style={{width: '100%', height: '12%'}}>
               <Image
                 source={require('../assets/images/splash.png')}
@@ -63,18 +75,27 @@ const Home = () => {
             <View style={styles.box}>
               <View style={{width: '60%', height: '100%'}}>
                 <Text style={{color: 'black', fontSize: 20, margin: 5}}>
-                  Total Assigned
+                  Total Delivered
                 </Text>
-                <Text style={{margin: 10, fontSize: 24, color: 'black'}}>
-                  2
+                <Text style={{margin: 10, fontSize: 24, color: '#f41127'}}>
+                  24
                 </Text>
               </View>
               <View>
-                <Ionicons
-                  style={{margin: 10, alignSelf: 'center'}}
-                  name="md-person-sharp"
-                  color="#FF9800"
-                  size={30}
+              <MaterialCommunityIcons
+                  name="truck-check"
+                  size={40}
+                  color="#fff"
+                  style={styles.icon}
+                  style={{
+                    backgroundColor: '#f41127',
+                    alignSelf: 'center',
+                    borderColor: '#fff',
+                    borderWidth: 1,
+                    borderRadius: 50,
+                    marginTop: 30,
+                    marginLeft: 15,
+                  }}
                 />
               </View>
             </View>
@@ -93,18 +114,27 @@ const Home = () => {
             <View style={styles.box}>
               <View style={{width: '60%', height: '100%'}}>
                 <Text style={{color: 'black', fontSize: 20, margin: 5}}>
-                  Total Assigned
+                  Total Pending Action
                 </Text>
-                <Text style={{margin: 10, fontSize: 24, color: 'black'}}>
-                  2
+                <Text style={{margin: 10, fontSize: 24, color: '#f41127'}}>
+                  4
                 </Text>
               </View>
               <View>
-                <Ionicons
-                  style={{margin: 10, alignSelf: 'center'}}
-                  name="md-person-sharp"
-                  color="#FF9800"
-                  size={30}
+                <MaterialCommunityIcons
+                  name="truck-check"
+                  size={40}
+                  color="#fff"
+                  style={styles.icon}
+                  style={{
+                    backgroundColor: '#f41127',
+                    alignSelf: 'center',
+                    borderColor: '#fff',
+                    borderWidth: 1,
+                    borderRadius: 50,
+                    marginTop: 30,
+                    marginLeft: 15,
+                  }}
                 />
               </View>
             </View>
@@ -112,7 +142,7 @@ const Home = () => {
         </View>
 
         <View style={styles.rightbox}>
-        <TouchableOpacity>
+          <TouchableOpacity>
             <View style={{width: '100%', height: '12%'}}>
               <Image
                 source={require('../assets/images/splash.png')}
@@ -121,20 +151,26 @@ const Home = () => {
             </View>
             <View style={styles.box}>
               <View style={{width: '60%', height: '100%'}}>
-                <Text style={{color: 'black', fontSize: 20, margin: 5}}>
-                  Total Assigned
+                <Text style={{color: 'black', fontSize: 17, margin: 5}}>
+                  Panding for Action 
+                  Towning Request
                 </Text>
-                <Text style={{margin: 10, fontSize: 24, color: 'black'}}>
+                <Text style={{margin: 10, fontSize: 24, color: '#f41127'}}>
                   2
                 </Text>
               </View>
               <View>
-                <Ionicons
-                  style={{margin: 10, alignSelf: 'center'}}
-                  name="md-person-sharp"
-                  color="#FF9800"
-                  size={30}
-                />
+                <Ionicons name="stats-chart" size={40} color="#fff"
+                style={styles.icon}
+                style={{
+                  backgroundColor: '#17a00e',
+                  alignSelf: 'center',
+                  borderColor: '#fff',
+                  borderWidth: 1,
+                  borderRadius: 50,
+                  marginTop: 30,
+                  marginLeft: 15,
+                }} />
               </View>
             </View>
           </TouchableOpacity>
@@ -151,27 +187,33 @@ const Home = () => {
             </View>
             <View style={styles.box}>
               <View style={{width: '60%', height: '100%'}}>
-                <Text style={{color: 'black', fontSize: 20, margin: 5}}>
-                  Total Assigned
+                <Text style={{color: 'black', fontSize: 17, margin: 5}}>
+                 Panding for Action 
+                 Repair Request
                 </Text>
-                <Text style={{margin: 10, fontSize: 24, color: 'black'}}>
+                <Text style={{margin: 10, fontSize: 24, color: '#0d6efd'}}>
                   2
                 </Text>
               </View>
               <View>
-                <Ionicons
-                  style={{margin: 10, alignSelf: 'center'}}
-                  name="md-person-sharp"
-                  color="#FF9800"
-                  size={30}
-                />
+                <Feather name="tool" size={40} color="#fff"
+                style={styles.icon}
+                style={{
+                  backgroundColor: '#0d6efd',
+                  alignSelf: 'center',
+                  borderColor: '#fff',
+                  borderWidth: 1,
+                  borderRadius: 50,
+                  marginTop: 30,
+                  marginLeft: 15,
+                }}  />
               </View>
             </View>
           </TouchableOpacity>
         </View>
 
         <View style={styles.rightbox}>
-        <TouchableOpacity>
+          <TouchableOpacity>
             <View style={{width: '100%', height: '12%'}}>
               <Image
                 source={require('../assets/images/splash.png')}
@@ -180,20 +222,26 @@ const Home = () => {
             </View>
             <View style={styles.box}>
               <View style={{width: '60%', height: '100%'}}>
-                <Text style={{color: 'black', fontSize: 20, margin: 5}}>
-                  Total Assigned
+                <Text style={{color: 'black', fontSize: 17, margin: 5}}>
+                  pending for Action
+                  Assign by Garage 
                 </Text>
-                <Text style={{margin: 10, fontSize: 24, color: 'black'}}>
-                  2
+                <Text style={{margin: 10, fontSize: 24, color: '#f41127'}}>
+                  0
                 </Text>
               </View>
               <View>
-                <Ionicons
-                  style={{margin: 10, alignSelf: 'center'}}
-                  name="md-person-sharp"
-                  color="#FF9800"
-                  size={30}
-                />
+                <Feather name="tool" size={40} color="#fff" 
+                style={styles.icon}
+                style={{
+                  backgroundColor: '#f41127',
+                  alignSelf: 'center',
+                  borderColor: '#fff',
+                  borderWidth: 1,
+                  borderRadius: 50,
+                  marginTop: 30,
+                  marginLeft: 15,
+                }}/>
               </View>
             </View>
           </TouchableOpacity>
@@ -229,29 +277,43 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     width: '100%',
     height: 150,
-    // backgroundColor: '#fff',
-    margin: 3,
+    margin: 10,
+    padding:1,
   },
   leftbox: {
     width: '47%',
     height: '100%',
     // backgroundColor: '#ff732a',
     flexDirection: 'column',
-    borderColor:'black',
-    borderWidth:1,
+    borderColor: 'black',
+    borderWidth: 1,
   },
   rightbox: {
     width: '47%',
     height: '100%',
     marginLeft: 10,
     // backgroundColor: '#ff732a',
-    borderColor:'black',
-    borderWidth:1,
+    borderColor: 'black',
+    borderWidth: 1,
   },
   box: {
     width: '100%',
     flexDirection: 'row',
     height: '85%',
+  },
+  iconView: {
+    
+    width: '37%',
+  },
+  icon: {
+    width: 55,
+    height: 52,
+    alignSelf: 'center',
+    borderColor: '#fff',
+    borderWidth: 1,
+    borderRadius: 50,
+    marginTop: 30,
+   
   },
 });
 export default Home;
