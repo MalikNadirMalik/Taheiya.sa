@@ -36,36 +36,27 @@ const Home = () => {
             </View>
             <View style={styles.box}>
               <View style={{width: '60%', height: '100%'}}>
-                <Text style={{color: 'black', fontSize: 20, margin: 5}}>
+                <Text style={{color: 'black', fontSize: 16, margin: 10}}>
                   Total Assigned
                 </Text>
-                <Text style={{margin: 10, fontSize: 24, color: 'black'}}>
+                <Text style={{margin: 10, fontSize: 20, color: 'black'}}>
                   2
                 </Text>
               </View>
               <View style={styles.iconView}>
                 <MaterialIcons
                   name="assignment-return"
-                  size={40}
+                  size={30}
                   color="#fff"
                   style={styles.icon}
-                  style={{
-                    backgroundColor: '#0dcaf0',
-                    alignSelf: 'center',
-                    borderColor: '#fff',
-                    borderWidth: 1,
-                    borderRadius: 50,
-                    marginTop: 30,
-                    marginLeft: 15,
-                  }}
                 />
               </View>
             </View>
-          </TouchableOpacity>
+          </TouchableOpacity> 
         </View>
 
         <View style={styles.rightbox}>
-          <TouchableOpacity>
+           <TouchableOpacity>
             <View style={{width: '100%', height: '12%'}}>
               <Image
                 source={require('../assets/images/splash.png')}
@@ -74,28 +65,27 @@ const Home = () => {
             </View>
             <View style={styles.box}>
               <View style={{width: '60%', height: '100%'}}>
-                <Text style={{color: 'black', fontSize: 20, margin: 5}}>
+                <Text style={{color: 'black', fontSize: 16, margin: 10}}>
                   Total Delivered
                 </Text>
-                <Text style={{margin: 10, fontSize: 24, color: '#f41127'}}>
+                <Text style={{margin: 10, fontSize: 20, color: '#f41127'}}>
                   24
                 </Text>
               </View>
-              <View>
+              <View  
+              style={{
+                    backgroundColor: '#f41127',
+                    width: '30%',
+                    alignSelf: 'center',
+                    height: '36%',
+                     borderRadius: 100,
+                  }}>
               <MaterialCommunityIcons
                   name="truck-check"
-                  size={40}
+                  size={30}
                   color="#fff"
                   style={styles.icon}
-                  style={{
-                    backgroundColor: '#f41127',
-                    alignSelf: 'center',
-                    borderColor: '#fff',
-                    borderWidth: 1,
-                    borderRadius: 50,
-                    marginTop: 30,
-                    marginLeft: 15,
-                  }}
+                 
                 />
               </View>
             </View>
@@ -113,28 +103,26 @@ const Home = () => {
             </View>
             <View style={styles.box}>
               <View style={{width: '60%', height: '100%'}}>
-                <Text style={{color: 'black', fontSize: 20, margin: 5}}>
+                <Text style={{color: 'black', fontSize: 16, margin: 10}}>
                   Total Pending Action
                 </Text>
-                <Text style={{margin: 10, fontSize: 24, color: '#f41127'}}>
+                <Text style={{margin: 10, fontSize: 20, color: '#f41127'}}>
                   4
                 </Text>
               </View>
-              <View>
+              <View
+               style={{
+                backgroundColor: '#f41127',
+                width: '30%',
+                alignSelf: 'center',
+                height: '36%',
+                 borderRadius: 100,
+              }}>
                 <MaterialCommunityIcons
                   name="truck-check"
-                  size={40}
+                  size={30}
                   color="#fff"
                   style={styles.icon}
-                  style={{
-                    backgroundColor: '#f41127',
-                    alignSelf: 'center',
-                    borderColor: '#fff',
-                    borderWidth: 1,
-                    borderRadius: 50,
-                    marginTop: 30,
-                    marginLeft: 15,
-                  }}
                 />
               </View>
             </View>
@@ -151,26 +139,23 @@ const Home = () => {
             </View>
             <View style={styles.box}>
               <View style={{width: '60%', height: '100%'}}>
-                <Text style={{color: 'black', fontSize: 17, margin: 5}}>
-                  Panding for Action 
-                  Towning Request
-                </Text>
-                <Text style={{margin: 10, fontSize: 24, color: '#f41127'}}>
+                <Text style={{color: 'black', fontSize: 16, marginLeft: 10, marginTop: 10}}>Panding for Action </Text>
+                <Text style={{color: 'black', fontSize: 14, marginLeft: 10 }}>Towning Request</Text>
+                <Text style={{margin: 10, fontSize: 20, color: '#f41127'}}>
                   2
                 </Text>
               </View>
-              <View>
-                <Ionicons name="stats-chart" size={40} color="#fff"
+              <View
+               style={{
+                backgroundColor: '#17a00e',
+                width: '30%',
+                alignSelf: 'center',
+                height: '36%',
+                 borderRadius: 100,
+              }}>
+                <Ionicons name="stats-chart" size={30} color="#fff"
                 style={styles.icon}
-                style={{
-                  backgroundColor: '#17a00e',
-                  alignSelf: 'center',
-                  borderColor: '#fff',
-                  borderWidth: 1,
-                  borderRadius: 50,
-                  marginTop: 30,
-                  marginLeft: 15,
-                }} />
+               />
               </View>
             </View>
           </TouchableOpacity>
@@ -187,26 +172,23 @@ const Home = () => {
             </View>
             <View style={styles.box}>
               <View style={{width: '60%', height: '100%'}}>
-                <Text style={{color: 'black', fontSize: 17, margin: 5}}>
-                 Panding for Action 
-                 Repair Request
-                </Text>
-                <Text style={{margin: 10, fontSize: 24, color: '#0d6efd'}}>
+                <Text style={{color: 'black', fontSize: 16, marginLeft: 10, marginTop: 10}}>Panding for Action</Text>
+                <Text style={{color: 'black', fontSize: 14, marginLeft: 10}}>Repair Request</Text>
+                <Text style={{margin: 10, fontSize: 20, color: '#0d6efd'}}>
                   2
                 </Text>
               </View>
-              <View>
-                <Feather name="tool" size={40} color="#fff"
+              <View
+              style={{
+                backgroundColor: '#0d6efd',
+                width: '30%',
+                alignSelf: 'center',
+                height: '36%',
+                 borderRadius: 100,
+              }}>
+                <Feather name="tool" size={30} color="#fff"
                 style={styles.icon}
-                style={{
-                  backgroundColor: '#0d6efd',
-                  alignSelf: 'center',
-                  borderColor: '#fff',
-                  borderWidth: 1,
-                  borderRadius: 50,
-                  marginTop: 30,
-                  marginLeft: 15,
-                }}  />
+                />
               </View>
             </View>
           </TouchableOpacity>
@@ -222,26 +204,23 @@ const Home = () => {
             </View>
             <View style={styles.box}>
               <View style={{width: '60%', height: '100%'}}>
-                <Text style={{color: 'black', fontSize: 17, margin: 5}}>
-                  pending for Action
-                  Assign by Garage 
-                </Text>
-                <Text style={{margin: 10, fontSize: 24, color: '#f41127'}}>
+                <Text style={{color: 'black', fontSize: 16, marginLeft: 10, marginTop: 10}}>Panding for Action</Text>
+                <Text style={{color: 'black', fontSize: 14, marginLeft: 10}}>Assign by Garage</Text>
+                <Text style={{margin: 10, fontSize: 20, color: '#f41127'}}>
                   0
                 </Text>
               </View>
-              <View>
-                <Feather name="tool" size={40} color="#fff" 
+              <View
+              style={{
+                backgroundColor: '#f41127',
+                width: '30%',
+                alignSelf: 'center',
+                height: '36%',
+                 borderRadius: 100,
+              }}>
+                <Feather name="tool" size={30} color="#fff" 
                 style={styles.icon}
-                style={{
-                  backgroundColor: '#f41127',
-                  alignSelf: 'center',
-                  borderColor: '#fff',
-                  borderWidth: 1,
-                  borderRadius: 50,
-                  marginTop: 30,
-                  marginLeft: 15,
-                }}/>
+               />
               </View>
             </View>
           </TouchableOpacity>
@@ -251,16 +230,15 @@ const Home = () => {
   );
 };
 const styles = StyleSheet.create({
-  nainContainer: {
-    flex: 1,
-    justifyContent: 'center',
+  Container: {
     backgroundColor: '#fff',
-    alignItems: 'center',
     height: '100%',
     width: '100%',
+    margin: 0,
+    padding: 0
   },
   mainimage: {
-    height: '100%',
+    height: '90%',
     width: '30%',
     marginLeft: '4%',
   },
@@ -275,44 +253,47 @@ const styles = StyleSheet.create({
   },
   Flatgrid: {
     flexDirection: 'row',
-    width: '100%',
+    width: '90%',
     height: 150,
-    margin: 10,
-    padding:1,
+    marginLeft: 10,
+    marginTop: 14,
+    marginRight: 10,
+    alignSelf: 'center',
+    justifyContent:'space-around',
   },
   leftbox: {
-    width: '47%',
+    width: '46%',
     height: '100%',
-    // backgroundColor: '#ff732a',
-    flexDirection: 'column',
-    borderColor: 'black',
-    borderWidth: 1,
+    
   },
   rightbox: {
-    width: '47%',
+    width: '46%',
     height: '100%',
-    marginLeft: 10,
-    // backgroundColor: '#ff732a',
-    borderColor: 'black',
-    borderWidth: 1,
   },
   box: {
     width: '100%',
     flexDirection: 'row',
-    height: '85%',
+    height: '88%',
+    borderRadius: 10,
+    elevation: 2,
+    backgroundColor: 'white'
   },
   iconView: {
-    
-    width: '37%',
+    width: '30%',
+    backgroundColor: '#0dcaf0',
+    alignSelf: 'center',
+    height: '36%',
+     borderRadius: 100,
   },
   icon: {
-    width: 55,
-    height: 52,
+    // width: 55,
+    // height: 52,
     alignSelf: 'center',
     borderColor: '#fff',
-    borderWidth: 1,
+   // borderWidth: 1,
     borderRadius: 50,
-    marginTop: 30,
+   // marginTop: '4%'
+    marginTop: 8,
    
   },
 });
